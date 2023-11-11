@@ -11,69 +11,136 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    
-    <hr>
-    <nav>
+    <header>
+        <h1>Hello World!</h1>
+        
+        <hr>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#intro">Introduction</a>
+                </li>
+                <li>
+                    <a href="#schedule">Daily Schedule</a>
+                </li>
+                <li>
+                    <a href="#links">Important Links</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <hr>
+        <section id="intro">
+            <h2>Ready to practice html and web languages.</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, blanditiis voluptatem ipsum incidunt libero voluptatum commodi voluptates eligendi aliquid quia ipsa doloribus cum eos nam soluta corporis in cumque! Odit?
+            </p>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere provident asperiores blanditiis beatae minima sequi! Repudiandae quod architecto libero aliquid esse? Magni perferendis provident quos odit tempora laudantium nesciunt blanditiis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus nisi perferendis sapiente deserunt nesciunt officia nulla molestias facere sint molestiae repellat laudantium, ad earum aliquam at, deleniti maxime est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat molestiae incidunt itaque! Corporis ullam, sunt labore vero, ab enim mollitia ea temporibus quo quod eum nesciunt debitis repudiandae ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut tempora, animi vero eos alias sequi aliquam totam laudantium maxime. Accusamus, in fugit. Reprehenderit quia libero ea ad rerum doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi qui placeat consequatur id similique, commodi expedita ipsam. Corporis dolorem optio officiis culpa numquam est magnam nisi dolorum ducimus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae tempora quas repudiandae rerum, perspiciatis quo unde vel sunt, dolor ratione facilis, at exercitationem. Recusandae accusamus sunt architecto sed ipsa! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates nam iusto ullam iste sit consequuntur id nesciunt, ad architecto voluptatum voluptatem ipsam hic tempora quis possimus earum quas inventore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis in dolore iusto, praesentium aperiam qui corrupti architecto ab unde magni nihil possimus. Ipsum, ut aperiam? Quaerat ratione doloribus incidunt corporis!
+            </p>
+        </section>
+        <hr>
+        <section id="schedule">
+            <h3>Daily schedule</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus, quis nesciunt ad modi minima saepe enim deleniti totam cupiditate. Facilis officia exercitationem ea sapiente facere veritatis culpa dicta architecto.</p>
+        </section>
+        <hr>
+        <article id="Contact">
+            <h2>Contact Me</h2>
+            <p>I'd love to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <div>
+                    
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required autofocus>
+                    </div>
+                    <div>
+                        <label for="surname">Surname:</label>
+                        <input type="text" name="surname" id="surname" placeholder="Doe" autocomplete="on" required>
+                    </div>
+                    <div>
+                        <label for="Password">Password:</label>
+                        <input type="password" name="Password" id="Password" placeholder="Your secret" required>
+                    </div>
+                    <div>
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="+555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </div>
+                    <div>
+                        <label for="coffee">Favourite coffee:</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list" required>
+                        <datalist id="coffee-list">
+                            <option value="coffee">
+                            <option value="latte">
+                            <option value="espresso">
+                            <option value="americano">
+                            <option value="flat white">
+                        </datalist>
+                    </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your favourite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">pizza</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <section id="links">
+            <h3>Important Links</h3>
+            <ul>
+                <li>
+                    Download an <a href="html5.png" download>HTML5 favicon</a>
+                </li>
+                <li>
+                    Contact me at <a href="mailto:random@gmail.com">my email address</a>.
+                </li>
+                <li>
+                    Dial <a href="tel:+1234567890">my phone number</a>.
+                </li>
+                <li>
+                    <a href="https://google.com/" target="_blank">Google</a>
+                </li>
+            </ul>
+        </section>
         <ul>
             <li>
-                <a href="#intro">Introduction</a>
+                <a href="about.html">Caleb Perelini</a>
             </li>
             <li>
-                <a href="#schedule">Daily Schedule</a>
-            </li>
-            <li>
-                <a href="#links">Important Links</a>
+                <a href="#">Back to top</a>
             </li>
         </ul>
-    </nav>
-
-    <hr>
-    <section id="intro">
-        <h2>Ready to practice html and web languages.</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, blanditiis voluptatem ipsum incidunt libero voluptatum commodi voluptates eligendi aliquid quia ipsa doloribus cum eos nam soluta corporis in cumque! Odit?
-        </p>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere provident asperiores blanditiis beatae minima sequi! Repudiandae quod architecto libero aliquid esse? Magni perferendis provident quos odit tempora laudantium nesciunt blanditiis.
-        </p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus nisi perferendis sapiente deserunt nesciunt officia nulla molestias facere sint molestiae repellat laudantium, ad earum aliquam at, deleniti maxime est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis fugiat molestiae incidunt itaque! Corporis ullam, sunt labore vero, ab enim mollitia ea temporibus quo quod eum nesciunt debitis repudiandae ad! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ut tempora, animi vero eos alias sequi aliquam totam laudantium maxime. Accusamus, in fugit. Reprehenderit quia libero ea ad rerum doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quasi qui placeat consequatur id similique, commodi expedita ipsam. Corporis dolorem optio officiis culpa numquam est magnam nisi dolorum ducimus animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid beatae tempora quas repudiandae rerum, perspiciatis quo unde vel sunt, dolor ratione facilis, at exercitationem. Recusandae accusamus sunt architecto sed ipsa! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptates nam iusto ullam iste sit consequuntur id nesciunt, ad architecto voluptatum voluptatem ipsam hic tempora quis possimus earum quas inventore. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis in dolore iusto, praesentium aperiam qui corrupti architecto ab unde magni nihil possimus. Ipsum, ut aperiam? Quaerat ratione doloribus incidunt corporis!
-        </p>
-    </section>
-
-    <hr>
-    <section id = "schedule">
-        <h3>Daily schedule</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus, quis nesciunt ad modi minima saepe enim deleniti totam cupiditate. Facilis officia exercitationem ea sapiente facere veritatis culpa dicta architecto.</p>
-    </section>      
-    <hr>
-
-    <section id="links">
-        <h3>Important Links</h3>
-        <ul>
-            <li>
-                Download an <a href="html5.png" download>HTML5 favicon</a>
-            </li>
-            <li>
-                Contact me at <a href="mailto:random@gmail.com">my email address</a>.
-            </li>
-            <li>
-                Dial <a href="tel:+1234567890">my phone number</a>.
-            </li>
-            <li>
-                <a href="https://google.com/" target="_blank">Google</a>
-            </li>
-        </ul>
-    </section>
-    <ul>
-        <li>
-            <a href="about.html">Caleb Perelini</a>
-        </li>
-        <li>
-            <a href="#">Back to top</a>
-        </li>
-    </ul>
+    </footer>
 </body>
 
 </html>
