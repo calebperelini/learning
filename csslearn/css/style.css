@@ -1,11 +1,29 @@
 body {
-    font-size: large;
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 p {
+    line-height: 1.5;
+}
+
+ol {
+    list-style-type: upper-roman;
+}
+
+a {
+    color: hsl(207, 44%, 49%);
+}
+
+a:visited {
     color: purple;
 }
 
-.gray {
-    color: grey;
+a:hover, a:focus {
+    opacity: 0.8; 
+}
+
+a:active {
+    color: red;
 }
